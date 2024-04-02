@@ -16,16 +16,20 @@
 
 <body>
     <div class="main-container">
+
         <header>
             <img src="images/logo/Booki.png" alt="Logo Booki">
             <nav>
                 <a href="#">Hébergements</a>
                 <a href="#">Activités</a>
             </nav>
-
         </header>
+
         <main>
-            <div class= "recherche">
+
+            <!-- Formulaire de recherche et filtres -->
+
+            <div class= "search">
                 <div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
@@ -38,9 +42,9 @@
                         <button type="submit" class="small-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-                <div class="filtres">
+                <div class="filters">
                     <h3>Filtres</h3>
-                    <div class="filtres-buttons">
+                    <div class="filters-buttons">
                         <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
                         <button><i class="fa-solid fa-person"></i> Familial</button>
                         <button><i class="fa-solid fa-heart"></i> Romantique</button>
@@ -52,7 +56,13 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
+
+            <!-- Hébergements et populaires -->
+
             <div class="hebergements-and-populaires">
+
+                <!-- Hébergements -->
+
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -181,6 +191,9 @@
                         <p>Afficher plus</p>
                     </div>
                 </section>
+
+                <!-- Populaires -->
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -247,55 +260,58 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Section activités -->
+
             <div class = "section-activites">
                 <div>
                     <h2 class="section-title">Activités à Marseille</h2>
                 </div>
-                <div class="activites">    
-                    <article class="card">
-                        <a href="#">
-                            <img src="images\activites\reno-laithienne.jpg" alt="Le vieux port">
+                <div class="activites">
+                    <a href="#">    
+                        <article class="card">
+                            <img src="images/activites/reno-laithienne.jpg" alt="Le vieux port">
                             <h3 class="card-title">Vieux-Port</h3>
-                        </a>
-                    </article>
-                    
-                    <article class="card">
-                        <a href="#">
-                            <img src="images\activites\paul-hermann.jpg" alt="Le fort de Pomègues">
+                        </article>
+                    </a>
+
+                    <a href="#">    
+                        <article class="card">
+                            <img src="images/activites/paul-hermann.jpg" alt="Le fort de Pomègues">
                             <h3 class="card-title">Fort de Pomègues</h3>
-                        </a>
-                    </article>
-                    
-                    <article class="card">
-                        <a href="#">
-                            <img src="images\activites\kilyan-sockalingum.jpg" alt="Parc national des calanques">
+                        </article>
+                    </a>
+
+                    <a href="#">    
+                        <article class="card">
+                            <img src="images/activites/kilyan-sockalingum.jpg" alt="Parc national des calanques">
                             <h3 class="card-title">Parc national des calanques</h3>
-                        </a>
-                    </article>
-                    
-                    <article class="card">
-                        <a href="#">
-                            <img src="images\activites\florian-wehde.jpg" alt="Notre-dame de la garde">
+                        </article>
+                    </a>
+
+                    <a href="#">    
+                        <article class="card">
+                            <img src="images/activites/florian-wehde.jpg" alt="Notre-dame de la garde">
                             <h3 class="card-title">Notre-dame de la garde</h3>
-                        </a>
-                    </article>
-                
+                        </article>
+                    </a>
                 </div>
             </div>
         </main>
+
         <footer>
-            <div class="liens-footer">
+            <div class="links-footer">
                 <h4>À propos</h4>
                 <a href="#">Fonctionnement du site</a> 
                 <a href="#">Conditions générales</a> 
                 <a href="#">Données et confidentialité</a>
             </div>
-            <div class="liens-footer">
+            <div class="links-footer">
                 <h4>Nos hébergements</h4>
                 <a href="#">Charte qualité</a> 
                 <a href="#">Proposez votre hôtel</a>
             </div>
-            <div class="liens-footer">
+            <div class="links-footer">
                 <h4>Assistance</h4>
            
                 <a href="#">Centre d'aide</a> 
