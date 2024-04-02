@@ -37,6 +37,7 @@ a {
 
 h1 {
     font-size: 22px;
+    margin-bottom: 8px;;
 }
 
 .section-title {
@@ -71,26 +72,26 @@ h1 {
 header {
     display:flex;
     justify-content: space-between;
+}
 
-    > img {
-        width:65px;
-        margin:30px 0px;
-    }
+header img {
+    width:65px;
+    margin:30px 0px;
+}
 
-    > nav {
-        padding-top:20px;
-    }
+nav {
+    padding-top:20px;
+}
 
-    > nav a {
-        margin-left:70px;
-        font-size: 16px;
-    }
+nav a {
+    margin-left:70px;
+    font-size: 16px;
+}
 
-    >nav a:hover{
-        border-top:solid 2px #0065FC;
-        color:#0065FC;
-        padding-top:10px;
-    }
+nav a:hover{
+    border-top:solid 2px #0065FC;
+    color:#0065FC;
+    padding-top:10px;
 }
 
 
@@ -125,19 +126,18 @@ header {
 
 .small-search-button {
     display:none;
-    
+}
 
-    > i{
-        position: relative;
-        left:-20px;
-        background-color: #0065FC;
-        color:white;
-        font-weight: 700;
-        padding:16px;
-        border:#0065FC solid 1px;
-        border-radius:15px;
-        box-shadow:0px 3px 2px #00000046;
-    }
+.small-search-button i{
+    position: relative;
+    left:-20px;
+    background-color: #0065FC;
+    color:white;
+    font-weight: 700;
+    padding:16px;
+    border:#0065FC solid 1px;
+    border-radius:15px;
+    box-shadow:0px 3px 2px #00000046;
 }
 
 #location-search {
@@ -171,11 +171,12 @@ header {
     background-color: white;
     font-weight: bold;
     font-size:16px;
-
-    > i {
-        margin-right:5px;
-    }
 }
+
+.filtres-buttons button i {
+    margin-right:5px;
+}
+
 
 .filtres-buttons button:hover{
     background-color: #DEEBFF;
@@ -184,16 +185,16 @@ header {
 .info{
     display:flex;
     align-items: center;
+}
 
-    >i {
-        padding: 8px;
-        width:16px;
-        text-align: center;
-        border:#d9d9d9 2px solid;
-        border-radius:50%;
-        aspect-ratio:1;
-        margin-right:10px;
-    }
+.info i {
+    padding: 8px;
+    height:16px;
+    width:16px;
+    text-align: center;
+    border:#d9d9d9 2px solid;
+    border-radius:50%;
+    margin-right:10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -222,21 +223,22 @@ header {
 .small-cards{
     display:flex;
     justify-content: flex-end;
+}
 
-    a {
-        width: 25%;
-        margin-left:30px;
-    }
+.small-cards a {
+    width: 25%;
+    margin-left:30px;
 }
 
 .big-cards{
     display: flex;
     justify-content:space-between;
-
-    a{
-        width:30%;
-    }
 }
+
+.big-cards a{
+    width:30%;
+}
+
 
 .hebergements-cards .card {
     display: flex;
@@ -339,16 +341,15 @@ header {
     padding-top:30px;
 }
 
-.activites .card{
+.activites a{
     width:22%;
-    padding:0;
 }
 
-.activites a {
+.activites .card {
     display:flex;
     flex-direction: column;
     width:100%;
-    margin-right:30px;
+    padding: 0;
 }
 
 .activites .card img{
@@ -411,11 +412,11 @@ footer {
 
     .small-cards {
         justify-content:space-between;
+    }
 
-        a{
-            width:30%;
-            margin:0;
-        }
+    .small-cards a{
+        width:30%;
+        margin:0;
     }
 
     .populaires {
@@ -460,26 +461,27 @@ footer {
     header {
         flex-direction: column;
         align-items: center;
-        
-        nav {
-            display:flex;
-            width:100%;
-            justify-content: space-between;
-        }
+    }
 
-        nav a{
-            margin:0;
-            width:50%;
-            padding-bottom:15px;
-            border-bottom:2px solid #d9d9d9;
-            text-align: center;
-        }
+    nav {
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+    }
 
-        nav a:hover{
-            border-top:none;
-            border-bottom:solid 2px #0065FC;
-            color:#0065FC;
-        }
+    nav a{
+        margin:0;
+        width:50%;
+        padding-bottom:15px;
+        border-bottom:2px solid #d9d9d9;
+        text-align: center;
+    }
+
+    nav a:hover{
+        border-top:none;
+        padding-top:0;
+        border-bottom:solid 2px #0065FC;
+        color:#0065FC;
     }
 
     .recherche {
@@ -502,20 +504,22 @@ footer {
         display:flex;
         flex-wrap:wrap;
         width:100%;
-        > button{
-            font-size:14px;
-            width:45%;
-            margin:15px 5px;
-        }
     }
+
+    .filtres-buttons > button{
+        font-size:14px;
+        width:45%;
+        margin:15px 5px;
+    }
+    
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+    }
 
-        > section {
-            border-radius: 0px;
-            padding:30px 20px;
-        }
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        padding:30px 20px;
     }
 
     .populaires {
