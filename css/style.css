@@ -103,6 +103,7 @@ nav a:hover{
 }
 
 .search h2 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -147,7 +148,6 @@ nav a:hover{
 #location-search {
     padding:15px;
     width:25%;
-    min-width:150px;
     font-weight: bold;
     border:none;
     outline: none;
@@ -227,26 +227,12 @@ nav a:hover{
 
 .hebergements-cards {
     display:flex;
-    flex-direction: column;
-}
-
-.small-cards{
-    display:flex;
-    justify-content: flex-end;
-}
-
-.small-cards a {
-    width: 25%;
-    margin-left:30px;
-    margin-top:30px;
-}
-
-.big-cards{
-    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
     justify-content:space-between;
 }
 
-.big-cards a{
+.hebergements-cards a{
     width:30%;
     margin-top:30px;
 }
@@ -391,7 +377,7 @@ footer {
     width: 33%;
 }
 
-.links-footer h4{
+.links-footer h1{
     font-size: 18px;
 }
 
@@ -420,15 +406,6 @@ footer {
 
     .hebergements {
         width: 100%;
-    }
-
-    .small-cards {
-        justify-content:space-between;
-    }
-
-    .small-cards a{
-        width:30%;
-        margin:0;
     }
 
     .populaires {
@@ -512,7 +489,7 @@ footer {
         display:contents;
     }
 
-    .search-form input{
+    #location-search{
         width:100%;
     }
 
@@ -556,11 +533,7 @@ footer {
         background-color: white;
     }
 
-    .small-cards {
-        flex-direction: column;
-    }
-
-    .big-cards {
+    .hebergements-cards {
         flex-direction: column;
     }
 
